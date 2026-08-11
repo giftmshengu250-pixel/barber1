@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fade &amp; Co. Barbershop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+ 
+<header class="site-header">
+    <div class="header-inner">
+        <img src="./Assets/Logo.jpg" alt="THE BIG STEPPER" class="logo">
+            <!-- Swap this span for <img src="logo.png" alt="Fade & Co. logo"> when you have your own logo -->
+            <span class="logo-text">FADE&nbsp;&amp;&nbsp;CO.</span>
+ 
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+ 
+        <nav id="siteNav">
+            <ul>
+                <li><a href="#services">Price List</a></li>
+                <li><a href="#queue">View Queue</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class=".nav-cta" href="queue.html">Book Now</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+ 
+<main>
+ 
+    <section id="top" class="hero">
+        <div class="hero-media">
+            <img src="./Assets/barber-shop.webp" alt="" class="hero-img" onerror="this.style.display='none'">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="eyebrow">Precision Cuts &middot; Est. Local Favourite</p>
+            <h1>Sharp Cuts.<br>No Shortcuts.</h1>
+            <p class="hero-copy">Your one-stop destination for fades, tapers, and beard work — done properly, every single time.</p>
+            <div class="hero-actions">
+                <a href="queue.html" class="btn btn-gold">Book Your Cut</a>
+                <a href="#services" class="btn btn-outline">Price List</a>
+            </div>
+        </div>
+    </section>
+ 
+    <div class="stripe-divider" role="presentation"></div>
+ 
+    <section id="queue" class="queue-strip">
+        <span class="queue-dot" aria-hidden="true"></span>
+        <p><strong>Current wait: ~30&ndash;45 min</strong> &middot; Walk-ins welcome</p>
+    </section>
+ 
+    <section id="services" class="services">
+        <div class="section-heading">
+            <p class="eyebrow">Our Haircuts</p>
+            <h2>Fresh, Every Time</h2>
+        </div>
+ 
+        <div class="cards-container">
+ 
+            <article class="service-card">
+                <div class="service-media">
+                    <svg class="media-fallback" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.6 12l4.5 4.5c-.1.4-.1.9 0 1.3.3 1.3 1.6 2.2 3 1.9 1.3-.3 2.2-1.6 1.9-3-.3-1.3-1.6-2.2-3-1.9-.4.1-.8.3-1.1.6L10.4 11 14.9 6.4c.3.3.7.5 1.1.6 1.3.3 2.7-.6 3-1.9.3-1.3-.6-2.7-1.9-3-1.3-.3-2.7.6-3 1.9-.1.4-.1.9 0 1.3L9.6 10 5.1 5.5c.1-.4.1-.9 0-1.3-.3-1.3-1.6-2.2-3-1.9C.8 2.6-.1 3.9.2 5.2c.3 1.3 1.6 2.2 3 1.9.4-.1.8-.3 1.1-.6L8.8 11l-4.5 4.5c-.3-.3-.7-.5-1.1-.6-1.3-.3-2.7.6-3 1.9-.3 1.3.6 2.7 1.9 3 1.3.3 2.7-.6 3-1.9.1-.4.1-.9 0-1.3L9.6 12z" fill="currentColor"/></svg>
+                    <img src="./Assets/Lowfade.jpg" alt="Low Fade haircut" loading="lazy" onerror="this.style.display='none'">
+                </div>
+                <div class="service-info">
+                    <h3>Low Fade</h3>
+                    <p class="price">R60 <span>&middot; R80 dye &amp; wash</span></p>
+                    <a href="queue.html" class="btn-book">Book now</a>
+                </div>
+            </article>
+ 
+            <article class="service-card">
+                <div class="service-media">
+                    <svg class="media-fallback" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.6 12l4.5 4.5c-.1.4-.1.9 0 1.3.3 1.3 1.6 2.2 3 1.9 1.3-.3 2.2-1.6 1.9-3-.3-1.3-1.6-2.2-3-1.9-.4.1-.8.3-1.1.6L10.4 11 14.9 6.4c.3.3.7.5 1.1.6 1.3.3 2.7-.6 3-1.9.3-1.3-.6-2.7-1.9-3-1.3-.3-2.7.6-3 1.9-.1.4-.1.9 0 1.3L9.6 10 5.1 5.5c.1-.4.1-.9 0-1.3-.3-1.3-1.6-2.2-3-1.9C.8 2.6-.1 3.9.2 5.2c.3 1.3 1.6 2.2 3 1.9.4-.1.8-.3 1.1-.6L8.8 11l-4.5 4.5c-.3-.3-.7-.5-1.1-.6-1.3-.3-2.7.6-3 1.9-.3 1.3.6 2.7 1.9 3 1.3.3 2.7-.6 3-1.9.1-.4.1-.9 0-1.3L9.6 12z" fill="currentColor"/></svg>
+                    <img src="./Assets/Highfade.jpg" alt="High Fade haircut" loading="lazy" onerror="this.style.display='none'">
+                </div>
+                <div class="service-info">
+                    <h3>High Fade</h3>
+                    <p class="price">R60 <span>&middot; R90 dye &amp; wash</span></p>
+                    <a href="queue.html" class="btn-book">Book now</a>
+                </div>
+            </article>
+ 
+            <article class="service-card">
+                <div class="service-media">
+                    <svg class="media-fallback" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.6 12l4.5 4.5c-.1.4-.1.9 0 1.3.3 1.3 1.6 2.2 3 1.9 1.3-.3 2.2-1.6 1.9-3-.3-1.3-1.6-2.2-3-1.9-.4.1-.8.3-1.1.6L10.4 11 14.9 6.4c.3.3.7.5 1.1.6 1.3.3 2.7-.6 3-1.9.3-1.3-.6-2.7-1.9-3-1.3-.3-2.7.6-3 1.9-.1.4-.1.9 0 1.3L9.6 10 5.1 5.5c.1-.4.1-.9 0-1.3-.3-1.3-1.6-2.2-3-1.9C.8 2.6-.1 3.9.2 5.2c.3 1.3 1.6 2.2 3 1.9.4-.1.8-.3 1.1-.6L8.8 11l-4.5 4.5c-.3-.3-.7-.5-1.1-.6-1.3-.3-2.7.6-3 1.9-.3 1.3.6 2.7 1.9 3 1.3.3 2.7-.6 3-1.9.1-.4.1-.9 0-1.3L9.6 12z" fill="currentColor"/></svg>
+                    <img src="./Assets/Tapperfade.jpg" alt="Taper Fade haircut" loading="lazy" onerror="this.style.display='none'">
+                </div>
+                <div class="service-info">
+                    <h3>Taper Fade</h3>
+                    <p class="price">R60 <span>&middot; R100 dye &amp; wash</span></p>
+                    <a href="queue.html" class="btn-book">Book now</a>
+                </div>
+            </article>
+ 
+            <article class="service-card">
+                <div class="service-media">
+                    <svg class="media-fallback" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 21c1.5-3.5 4-5 7-5s5.5 1.5 7 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                    <img src="./Assets/cheesekop.jpg" alt="Bald / cheeskop cut" loading="lazy" onerror="this.style.display='none'">
+                </div>
+                <div class="service-info">
+                    <h3>Bald / Cheeskop</h3>
+                    <p class="price">R30</p>
+                    <a href="queue.html" class="btn-book">Book now</a>
+                </div>
+            </article>
+ 
+            <article class="service-card">
+                <div class="service-media">
+                    <svg class="media-fallback" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-3.3 0-6 2.5-6 6.5 0 3.2 1.4 6.1 3 8 .7.8 1.3 1.4 2 1.5.7-.1 1.3-.7 2-1.5 1.6-1.9 3-4.8 3-8 0-4-2.7-6.5-6-6.5z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 10c1 1 5 1 6 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                    <img src="./Assets/beard.webp" alt="Beard trim" loading="lazy" onerror="this.style.display='none'">
+                </div>
+                <div class="service-info">
+                    <h3>Beard Trim</h3>
+                    <p class="price">R20</p>
+                    <a href="queue.html" class="btn-book">Book now</a>
+                </div>
+            </article>
+ 
+        </div>
+    </section>
+ 
+    <section id="book" class="cta-band">
+        <h2>Ready when you are.</h2>
+        <p>Book online in under a minute, or just walk in.</p>
+        <a href="queue.html" class="btn btn-gold">Book Now!</a>
+    </section>
+ 
+</main>
+ 
+<footer id="contact" class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-col">
+            <span class="logo-mark small">F&amp;C</span>
+            <p class="footer-about">Fade &amp; Co. Barbershop &mdash; grooming done right, since day one.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Phone: <a href="tel:+27123456789">(012) 345&ndash;6789</a></p>
+            <p>Email: <a href="mailto:info@fadeandco.co.za">info@fadeandco.co.za</a></p>
+        </div>
+        <div class="footer-col">
+            <h4>Hours</h4>
+            <p>Mon&ndash;Fri: 08:00 &ndash; 18:00</p>
+            <p>Saturday: 08:00 &ndash; 15:00</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Fade &amp; Co. Barbershop. All rights reserved.</p>
+    </div>
+</footer>
+ 
+<script>
+    const navToggle = document.getElementById('navToggle');
+    const siteNav = document.getElementById('siteNav');
+    navToggle.addEventListener('click', () => {
+        const open = siteNav.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', open);
+    });
+    siteNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            siteNav.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', false);
+        });
+    });
+</script>
+ 
+</body>
+</html>

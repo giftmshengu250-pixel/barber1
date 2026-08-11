@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBS Queue</title>
+    <link rel="stylesheet" href="../css/queue.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="header-inner">
+        <img src="../Assets/Logo.jpg" alt="THE BIG STEPPER" class="logo">
+            <!-- Swap this span for <img src="logo.png" alt="Fade & Co. logo"> when you have your own logo -->
+            <span class="logo-text">FADE&nbsp;&amp;&nbsp;CO.</span>
+ 
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="queue-container">
+        <h1>Current Queue</h1>
+     <div id="cardsList"></div>
+        
+    </section>
+
+    <section class="add-to-queue">
+        <h2>Join the Queue</h2>
+        <br>
+        <form id="bookingForm">
+            <p>Name & Surname</p>
+              <input type="text" id="nameInput" placeholder="Enter name" required>
+
+            <br>
+
+            <p>phone Number</p>
+              <input type="text" id="phoneNumber" placeholder="Enter Phone number">
+
+            <br>
+
+            <p>Hairstyle</p>
+            <select id="style">
+                 <option value="Top Fade">Top/Tapper Fade</option>
+
+                 <option value="Skin Fade">Low Fade</option>
+
+                 <option value="Buzz Cut">Bald/Chiskop</option>
+
+                 <option value="Haircut & Beard">Haircut & Beard</option>
+            </select>
+            <button type="submit" id="submission">Join Queue</button>
+        </form>
+
+
+    </section>
+</main>
+
+<script src="../scripts/script.js"></script>
+</body>
+</html>
